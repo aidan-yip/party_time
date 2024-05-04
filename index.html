@@ -11,128 +11,225 @@
       href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Gugi&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+80s+Fade&display=swap"
       rel="stylesheet"
     />
-    <title>Party Grid</title>
+    <title>Party Time!</title>
   </head>
   <body>
-    <div id="out">
+    <div id="navbar">
       <h3 id="score">Score: 0</h3>
       <h1 id="party_text">PARTY TIME!</h1>
-      <h2 id="red_text">GET ALL THE RED</h2>
-      <h2 id="counter">3</h2>
+      <h2 id="red_text">GET ALL THE: 🎁</h2>
+      <h2 id="counter">5</h2>
+      <h2 id="past_score"></h2>
+      <a id="replay" href="">REPLAY?</a>
+    </div>
+    <div id="out">
       <div id="grid_container">
         <!--Root blocks-->
-        <button class="grid_block" id="blue">🎉</button>
-        <button class="grid_block point" id="red">🎉</button>
-        <button class="grid_block" id="green">🎉</button>
-        <button class="grid_block" id="yellow">🎉</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
         <!--Root blocks-->
 
-        <button class="grid_block point" id="red">🎉</button>
-        <button class="grid_block" id="green">🎉</button>
-        <button class="grid_block" id="yellow">🎉</button>
-        <button class="grid_block" id="blue">🎉</button>
-        <button class="grid_block" id="green">🎉</button>
-        <button class="grid_block" id="yellow">🎉</button>
-        <button class="grid_block point" id="red">🎉</button>
-        <button class="grid_block" id="blue">🎉</button>
-        <button class="grid_block point" id="red">🎉</button>
-        <button class="grid_block" id="green">🎉</button>
-        <button class="grid_block" id="yellow">🎉</button>
-        <button class="grid_block" id="blue">🎉</button>
-        <button class="grid_block" id="green">🎉</button>
-        <button class="grid_block" id="yellow">🎉</button>
-        <button class="grid_block point" id="red">🎉</button>
-        <button class="grid_block" id="blue">🎉</button>
-        <button class="grid_block point" id="red">🎉</button>
-        <button class="grid_block" id="green">🎉</button>
-        <button class="grid_block" id="yellow">🎉</button>
-        <button class="grid_block" id="blue">🎉</button>
-        <button class="grid_block" id="green">🎉</button>
-        <button class="grid_block" id="yellow">🎉</button>
-        <button class="grid_block point" id="red">🎉</button>
-        <button class="grid_block" id="blue">🎉</button>
-        <button class="grid_block point" id="red">🎉</button>
-        <button class="grid_block" id="green">🎉</button>
-        <button class="grid_block" id="yellow">🎉</button>
-        <button class="grid_block" id="blue">🎉</button>
-        <button class="grid_block" id="green">🎉</button>
-        <button class="grid_block" id="yellow">🎉</button>
-        <button class="grid_block point" id="red">🎉</button>
-        <button class="grid_block" id="blue">🎉</button>
-        <button class="grid_block point" id="red">🎉</button>
-        <button class="grid_block" id="green">🎉</button>
-        <button class="grid_block" id="yellow">🎉</button>
-        <button class="grid_block" id="blue">🎉</button>
-        <button class="grid_block" id="green">🎉</button>
-        <button class="grid_block" id="yellow">🎉</button>
-        <button class="grid_block point" id="red">🎉</button>
-        <button class="grid_block" id="blue">🎉</button>
-        <button class="grid_block point" id="red">🎉</button>
-        <button class="grid_block" id="green">🎉</button>
-        <button class="grid_block" id="yellow">🎉</button>
-        <button class="grid_block" id="blue">🎉</button>
-        <button class="grid_block" id="green">🎉</button>
-        <button class="grid_block" id="yellow">🎉</button>
-        <button class="grid_block point" id="red">🎉</button>
-        <button class="grid_block" id="blue">🎉</button>
-        <button class="grid_block point" id="red">🎉</button>
-        <button class="grid_block" id="green">🎉</button>
-        <button class="grid_block" id="yellow">🎉</button>
-        <button class="grid_block" id="blue">🎉</button>
-        <button class="grid_block" id="green">🎉</button>
-        <button class="grid_block" id="yellow">🎉</button>
-        <button class="grid_block point" id="red">🎉</button>
-        <button class="grid_block" id="blue">🎉</button>
-        <button class="grid_block point" id="red">🎉</button>
-        <button class="grid_block" id="green">🎉</button>
-        <button class="grid_block" id="yellow">🎉</button>
-        <button class="grid_block" id="blue">🎉</button>
-        <button class="grid_block" id="green">🎉</button>
-        <button class="grid_block" id="yellow">🎉</button>
-        <button class="grid_block point" id="red">🎉</button>
-        <button class="grid_block" id="blue">🎉</button>
-        <button class="grid_block point" id="red">🎉</button>
-        <button class="grid_block" id="green">🎉</button>
-        <button class="grid_block" id="yellow">🎉</button>
-        <button class="grid_block" id="blue">🎉</button>
-        <button class="grid_block" id="green">🎉</button>
-        <button class="grid_block" id="yellow">🎉</button>
-        <button class="grid_block point" id="red">🎉</button>
-        <button class="grid_block" id="blue">🎉</button>
-        <button class="grid_block point" id="red">🎉</button>
-        <button class="grid_block" id="green">🎉</button>
-        <button class="grid_block" id="yellow">🎉</button>
-        <button class="grid_block" id="blue">🎉</button>
-        <button class="grid_block" id="green">🎉</button>
-        <button class="grid_block" id="yellow">🎉</button>
-        <button class="grid_block point" id="red">🎉</button>
-        <button class="grid_block" id="blue">🎉</button>
-        <button class="grid_block point" id="red">🎉</button>
-        <button class="grid_block" id="green">🎉</button>
-        <button class="grid_block" id="yellow">🎉</button>
-        <button class="grid_block" id="blue">🎉</button>
-        <button class="grid_block" id="green">🎉</button>
-        <button class="grid_block" id="yellow">🎉</button>
-        <button class="grid_block point" id="red">🎉</button>
-        <button class="grid_block" id="blue">🎉</button>
-        <button class="grid_block point" id="red">🎉</button>
-        <button class="grid_block" id="green">🎉</button>
-        <button class="grid_block" id="yellow">🎉</button>
-        <button class="grid_block" id="blue">🎉</button>
-        <button class="grid_block" id="green">🎉</button>
-        <button class="grid_block" id="yellow">🎉</button>
-        <button class="grid_block point" id="red">🎉</button>
-        <button class="grid_block" id="blue">🎉</button>
-        <button class="grid_block point" id="red">🎉</button>
-        <button class="grid_block" id="green">🎉</button>
-        <button class="grid_block" id="yellow">🎉</button>
-        <button class="grid_block" id="blue">🎉</button>
-        <button class="grid_block" id="green">🎉</button>
-        <button class="grid_block" id="yellow">🎉</button>
-        <button class="grid_block point" id="red">🎉</button>
-        <button class="grid_block" id="blue">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="green">🎉</button>
+        <button class="grid_block wrong" id="yellow">🎉</button>
+        <button class="grid_block wrong" id="blue">🎉</button>
+        <button class="grid_block point" id="red">🎁</button>
+        <button class="grid_block wrong" id="green">🎉</button>
       </div>
     </div>
+
+    <audio crossorigin="anonymous" id="point" src="./party_grid_point.wav"></audio>
+    <audio crossorigin="anonymous" id="null" src="./party_grid_null.wav"></audio>
 
     <script src="./party.js" defer></script>
   </body>
