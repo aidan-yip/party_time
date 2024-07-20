@@ -8,10 +8,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Gugi&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+80s+Fade&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&display=swap");
 
 :root {
-  --font_default: "Edu AU VIC WA NT Hand", cursive;;
+  --font_default: "Edu AU VIC WA NT Hand", cursive;
 }
 
 @keyframes credits {
@@ -58,7 +58,13 @@ body {
 }
 
 #out {
-  background: #23c9bb;
+  background: rgb(246, 246, 246);
+  background: linear-gradient(
+    0deg,
+    rgba(246, 246, 246, 1) 0%,
+    rgba(82, 227, 212, 1) 51%,
+    rgba(35, 201, 187, 1) 100%
+  );
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -312,11 +318,11 @@ a#replay:visited:hover {
     color: #3be4d6;
     background-color: transparent;
   }
-  
+
   a#replay:visited {
     color: #efefef;
   }
-  
+
   a#replay:visited:hover {
     color: #3be4d6;
     background-color: transparent;
