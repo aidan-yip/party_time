@@ -1,4 +1,9 @@
 addEventListener("DOMContentLoaded", (event) => {
+
+  $(window).on("beforeunload", function() { 
+    return inFormOrLink ? "Do you really want to close?" : null; 
+})
+
   console.log("loaded page");
 
   //DOM elements
@@ -81,7 +86,6 @@ addEventListener("DOMContentLoaded", (event) => {
 
   function display_none() {
     counter.style.display = "none";
-    buttons.style.display = "none";
     console.log("Counter hide");
     console.log("Hide buttons")
   }
