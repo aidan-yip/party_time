@@ -121,14 +121,17 @@ h3#score {
 a#replay {
   display: none;
   justify-content: center;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 3%;
-  color: #000000;
-  border: none;
-  width: 20%;
-  height: 70px;
+  padding: 0px 50px;
+  color: #efefef;
+  background-color: #39a0bf;
+  width: 30%;
+  height: 130px;
   border-radius: 25px;
+  border: 1px solid #3be4d6;
   font-family: var(--font_default);
   font-size: 50px;
   text-decoration: none;
@@ -136,15 +139,17 @@ a#replay {
 }
 
 a#replay:hover {
-  color: #6a1be0;
+  color: #3be4d6;
+  background-color: #397cbf;
 }
 
 a#replay:visited {
-  color: #000000;
+  color: #efefef;
 }
 
 a#replay:visited:hover {
-  color: #6a1be0;
+  color: #3be4d6;
+  background-color: #397cbf;
 }
 
 #navbar {
@@ -301,5 +306,21 @@ a#replay:visited:hover {
     width: 20%;
     height: 70px;
     font-size: 30px;
+    background-color: transparent;
+    border: none;
+  }
+
+  a#replay:hover {
+    color: #3be4d6;
+    background-color: transparent;
+  }
+  
+  a#replay:visited {
+    color: #efefef;
+  }
+  
+  a#replay:visited:hover {
+    color: #3be4d6;
+    background-color: transparent;
   }
 }
