@@ -8,8 +8,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Gugi&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+80s+Fade&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&display=swap');
+
 :root {
-  --font_default: "Rubik 80s Fade", system-ui;
+  --font_default: "Edu AU VIC WA NT Hand", cursive;;
 }
 
 @keyframes credits {
@@ -51,17 +53,12 @@
 
 body {
   overflow: hidden;
-  background-color: rgb(12, 119, 185);
+  background-color: #23c9bb;
   cursor: cell;
 }
 
 #out {
-  background: linear-gradient(
-    167deg,
-    rgba(0, 255, 211, 1) 0%,
-    rgba(1, 111, 255, 1) 57%,
-    rgba(0, 91, 171, 1) 100%
-  );
+  background: #23c9bb;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -96,6 +93,8 @@ h2#red_text {
 }
 
 h2#counter {
+  width: 20%;
+  margin: 0 auto;
   margin-top: 2%;
   text-align: center;
   align-items: center;
@@ -135,7 +134,7 @@ a#replay {
   font-family: var(--font_default);
   font-size: 50px;
   text-decoration: none;
-  cursor: cell;
+  cursor: pointer;
 }
 
 a#replay:hover {
@@ -191,7 +190,6 @@ a#replay:visited:hover {
   /*Animate*/
   animation: shake 1s ease-in-out;
   animation-iteration-count: infinite;
-  transition: 3s ease;
 }
 
 #blue {
@@ -239,22 +237,22 @@ a#replay:visited:hover {
 
 .grid_block#blue:active {
   cursor: not-allowed;
-  animation: flip_button 0.1s linear infinite;
+  animation: flip_button 0.2s linear infinite;
 }
 
 .grid_block#red:active {
   cursor: copy;
-  animation: flip_button 0.1s linear infinite;
+  animation: flip_button 0.2s linear infinite;
 }
 
 .grid_block#green:active {
   cursor: not-allowed;
-  animation: flip_button 0.1s linear infinite;
+  animation: flip_button 0.2s linear infinite;
 }
 
 .grid_block#yellow:active {
   cursor: not-allowed;
-  animation: flip_button 0.1s linear infinite;
+  animation: flip_button 0.2s linear infinite;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -273,7 +271,7 @@ a#replay:visited:hover {
 
   h1 {
     display: absolute;
-    margin-top: 5%;
+    margin-top: 13%;
     text-align: center;
     align-items: center;
     font-family: var(--font_default);

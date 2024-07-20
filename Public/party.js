@@ -1,8 +1,7 @@
 addEventListener("DOMContentLoaded", (event) => {
-
-  $(window).on("beforeunload", function() { 
-    return inFormOrLink ? "Do you really want to close?" : null; 
-})
+  $(window).on("beforeunload", function () {
+    return inFormOrLink ? "Do you really want to close?" : null;
+  });
 
   console.log("loaded page");
 
@@ -20,6 +19,8 @@ addEventListener("DOMContentLoaded", (event) => {
   let count = 0;
 
   window.onload = () => {
+    //Autoplay music
+    play_party_music();
     //Timers
     setTimeout(() => {
       const Timeout = setTimeout(count_time, 1000);
@@ -87,16 +88,25 @@ addEventListener("DOMContentLoaded", (event) => {
   function display_none() {
     counter.style.display = "none";
     console.log("Counter hide");
-    console.log("Hide buttons")
+    console.log("Hide buttons");
   }
 
   //Score
 
   function YourScore() {
-    score.style.display = "none"
+    score.style.display = "none";
     counter.style.display = "block";
-    counter.innerText =
-      "Your Score is:  " + count + "!";
+    counter.innerText = "Your Score is:  " + count + "!";
+    //disable buttons
+    for (let i = 0; i < point.length; i++) {
+        point[i].style.pointerEvents = "none";
+    }
+    for (let i = 0; i < wrong.length; i++) {
+      wrong[i].onclick = () => {
+        wrong[i].style.pointerEvents = "none"; 
+      };
+    }
+    console.log("Buttons disabled");
   }
 
   //Replay
@@ -111,11 +121,12 @@ addEventListener("DOMContentLoaded", (event) => {
     point[i].onclick = () => {
       count += 1;
       score.innerText = "Score: " + count;
-      point[i].style.backgroundColor = "#1c1c1c"
-      point[i].innerText = "✅"
+      point[i].style.backgroundColor = "#1c1c1c";
+      point[i].innerText = "✅";
       console.log("clicked Point");
       console.log(count);
       play_point();
+      play_party_music();
     };
   }
 
@@ -125,11 +136,12 @@ addEventListener("DOMContentLoaded", (event) => {
     wrong[i].onclick = () => {
       count -= 1;
       score.innerText = "Score: " + count;
-      wrong[i].style.backgroundColor = "#1c1c1c"
+      wrong[i].style.backgroundColor = "#1c1c1c";
       wrong[i].innerText = "❌";
       console.log("clicked Wrong");
       console.log(count);
       play_null();
+      play_party_music();
     };
   }
 
@@ -140,18 +152,29 @@ addEventListener("DOMContentLoaded", (event) => {
     console.log("win");
   }
 
+  //Music
+
+  const party_music = document.getElementById("party_music");
+
+  function play_party_music() {
+    party_music.play();
+    console.log("Playing Party Music!");
+  }
+
   //Sound FX
 
-  let point_sound = document.getElementById("point");
-  let null_sound = document.getElementById("null");
+  const point_sound = document.getElementById("point");
+  const null_sound = document.getElementById("null");
 
   function play_point() {
     point_sound.currentTime = 0;
     point_sound.play();
+    console.log("Point sound played");
   }
 
   function play_null() {
     null_sound.currentTime = 0;
     null_sound.play();
+    console.log("Wrong sound played");
   }
 });
