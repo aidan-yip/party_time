@@ -67,22 +67,27 @@ addEventListener("DOMContentLoaded", (event) => {
 
   function count_time() {
     counter.innerText = 5 - 1;
+    play_count_fx();
   }
 
   function count_time_2() {
     counter.innerText = 5 - 2;
+    play_count_fx();
   }
 
   function count_time_3() {
     counter.innerText = 5 - 3;
+    play_count_fx();
   }
 
   function count_time_4() {
     counter.innerText = 5 - 4;
+    play_count_fx();
   }
 
   function count_time_Go() {
     counter.innerText = "GO!";
+    play_go_fx();
   }
 
   function display_none() {
@@ -166,10 +171,29 @@ addEventListener("DOMContentLoaded", (event) => {
   const point_sound = document.getElementById("point");
   const null_sound = document.getElementById("null");
 
+  const count_fx = new Audio(
+    "./count.wav"
+  );
+
+  const go_fx = new Audio(
+    "./go.wav"
+  );
+  
+  function play_count_fx() {
+    count_fx.currentTime = 0;
+    count_fx.play();
+    console.log("Count sound played");
+  }
+
+  function play_go_fx() {
+    go_fx.currentTime = 0;
+    go_fx.play();
+  }
+
   function play_point() {
     point_sound.currentTime = 0;
     point_sound.play();
-    console.log("Point sound played");
+    console.log("Go sound played");
   }
 
   function play_null() {
