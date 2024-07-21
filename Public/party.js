@@ -20,7 +20,7 @@ addEventListener("DOMContentLoaded", (event) => {
 
   window.onload = () => {
     //Autoplay music
-    play_party_music();
+    //play_party_music();
     //Timers
     setTimeout(() => {
       const Timeout = setTimeout(count_time, 1000);
