@@ -68,4 +68,3 @@ node_modules/
 # dataconnect generated files
 .dataconnect
 .DS_Store
-/.VSCodeCounter
