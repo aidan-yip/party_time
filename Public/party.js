@@ -18,6 +18,22 @@ addEventListener("DOMContentLoaded", (event) => {
   let wrong = document.querySelectorAll(".wrong");
   let count = 0;
 
+  //Disable Zoom
+  document.addEventListener("gesturestart", function (e) {
+    e.preventDefault();
+    document.body.style.zoom = 0.99;
+  });
+
+  document.addEventListener("gesturechange", function (e) {
+    e.preventDefault();
+
+    document.body.style.zoom = 0.99;
+  });
+  document.addEventListener("gestureend", function (e) {
+    e.preventDefault();
+    document.body.style.zoom = 1;
+  });
+
   window.onload = () => {
     //Autoplay music
     //play_party_music();
@@ -104,11 +120,11 @@ addEventListener("DOMContentLoaded", (event) => {
     counter.innerText = "Your Score is:  " + count + "!";
     //disable buttons
     for (let i = 0; i < point.length; i++) {
-        point[i].style.pointerEvents = "none";
+      point[i].style.pointerEvents = "none";
     }
     for (let i = 0; i < wrong.length; i++) {
       wrong[i].onclick = () => {
-        wrong[i].style.pointerEvents = "none"; 
+        wrong[i].style.pointerEvents = "none";
       };
     }
     console.log("Buttons disabled");
@@ -171,14 +187,10 @@ addEventListener("DOMContentLoaded", (event) => {
   const point_sound = document.getElementById("point");
   const null_sound = document.getElementById("null");
 
-  const count_fx = new Audio(
-    "./count.wav"
-  );
+  const count_fx = new Audio("./count.wav");
 
-  const go_fx = new Audio(
-    "./go.wav"
-  );
-  
+  const go_fx = new Audio("./go.wav");
+
   function play_count_fx() {
     count_fx.currentTime = 0;
     count_fx.play();
