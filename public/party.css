@@ -264,7 +264,7 @@ a#replay:visited:hover {
 @media only screen and (max-width: 1000px) {
   #grid_container {
     margin-top: 150%;
-    animation: 100s credits linear 1;
+    animation: 90s credits linear 1;
   }
 
   .grid_block {
