@@ -64,7 +64,12 @@ addEventListener("DOMContentLoaded", (event) => {
     }, "1000");
 
     setTimeout(() => {
-      const Timeout = setTimeout(display_none, 6000);
+      const Timeout = setTimeout(go_arrow, 7000);
+      console.log("display none.");
+    }, "1000");
+
+    setTimeout(() => {
+      const Timeout = setTimeout(display_none, 8000);
       console.log("display none.");
     }, "1000");
 
@@ -104,6 +109,10 @@ addEventListener("DOMContentLoaded", (event) => {
   function count_time_Go() {
     counter.innerText = "GO!";
     play_go_fx();
+  }
+
+  function go_arrow() {
+    counter.innerText = "⬇️";
   }
 
   function display_none() {
