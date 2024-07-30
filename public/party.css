@@ -58,12 +58,12 @@ body {
 }
 
 #out {
-  background: rgb(246, 246, 246);
+  background: rgb(0, 54, 60);
   background: linear-gradient(
     0deg,
-    rgba(246, 246, 246, 1) 0%,
-    rgba(82, 227, 212, 1) 51%,
-    rgba(35, 201, 187, 1) 100%
+    rgb(0, 48, 73) 0%,
+    rgb(69, 177, 167) 51%,
+    rgb(66, 237, 223) 100%
   );
   margin-left: auto;
   margin-right: auto;
@@ -82,7 +82,7 @@ h1 {
   font-family: var(--font_default);
   color: aliceblue;
   font-size: 60px;
-  text-shadow: 0px 0px 25px#000000;
+  text-shadow: 0px 0px 50px#000000;
   z-index: 2;
 }
 
@@ -95,7 +95,7 @@ h2#red_text {
   font-family: var(--font_default);
   font-size: 40px;
   color: rgb(231, 15, 15);
-  text-shadow: 0px 0px 25px#000000;
+  text-shadow: 0px 0px 50px#000000;
 }
 
 h2#counter {
@@ -107,7 +107,7 @@ h2#counter {
   font-family: var(--font_default);
   font-size: 30px;
   color: rgb(237, 229, 229);
-  text-shadow: 0px 0px 25px#000000;
+  text-shadow: 0px 0px 50px#000000;
 }
 
 h3#score {
@@ -136,7 +136,7 @@ a#replay {
   width: 30%;
   height: 130px;
   border-radius: 25px;
-  border: 1px solid #3be4d6;
+  border: 1px solid #2fb7ab;
   font-family: var(--font_default);
   font-size: 50px;
   text-decoration: none;
@@ -144,8 +144,8 @@ a#replay {
 }
 
 a#replay:hover {
-  color: #3be4d6;
-  background-color: #397cbf;
+  color: #10514c;
+  background-color: #9bd5ee;
 }
 
 a#replay:visited {
@@ -153,8 +153,8 @@ a#replay:visited {
 }
 
 a#replay:visited:hover {
-  color: #3be4d6;
-  background-color: #397cbf;
+  color: #10514c;
+  background-color: #9bd5ee;
 }
 
 #navbar {
@@ -188,7 +188,7 @@ a#replay:visited:hover {
   height: auto;
   border-radius: 25px;
   border: none;
-  box-shadow: 0px 0px 25px #000000;
+  box-shadow: 0px 0px 50px #00000073;
   margin-left: auto;
   margin-right: auto;
   font-family: sans-serif;
@@ -199,42 +199,49 @@ a#replay:visited:hover {
 }
 
 #blue {
-  background-color: blue;
-  cursor: cell;
+  background-color: rgba(0, 41, 155, 0.511);
+  border: solid 1px #5acbe8;
+  -webkit-backdrop-filter: blur(5px);
 }
 
 #red {
-  background-color: rgb(215, 3, 3);
+  background-color: rgba(208, 0, 0, 0.789);
+  border: solid 1px #e7b9bd;
+  -webkit-backdrop-filter: blur(5px);
 }
 
 #green {
-  background-color: green;
+  background-color: rgba(0, 128, 0, 0.501);
+  border: solid 1px #0bee4b;
+  -webkit-backdrop-filter: blur(5px);
 }
 
 #yellow {
-  background-color: rgb(255, 208, 0);
+  background-color: rgba(184, 150, 0, 0.513);
+  border: solid 1px #ffe76f;
+  -webkit-backdrop-filter: blur(5px);
 }
 
 /*hover*/
 
 @media only screen and (min-width: 1000px) {
   #blue:hover {
-    background-color: rgb(75, 150, 255);
+    background-color: rgb(213, 231, 255);
     cursor: cell;
   }
 
   #red:hover {
-    background-color: rgb(255, 65, 65);
+    background-color: rgb(255, 188, 188);
     cursor: cell;
   }
 
   #green:hover {
-    background-color: rgb(87, 238, 87);
+    background-color: rgb(186, 255, 186);
     cursor: cell;
   }
 
   #yellow:hover {
-    background-color: rgb(255, 244, 125);
+    background-color: rgb(255, 247, 158);
     cursor: cell;
   }
 }
