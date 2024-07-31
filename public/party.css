@@ -201,25 +201,25 @@ a#replay:visited:hover {
 #blue {
   background-color: rgba(0, 41, 155, 0.511);
   border: solid 1px #5acbe8;
-  -webkit-backdrop-filter: blur(5px);
+  
 }
 
 #red {
-  background-color: rgba(208, 0, 0, 0.789);
-  border: solid 1px #e7b9bd;
-  -webkit-backdrop-filter: blur(5px);
+  background-color: rgba(148, 24, 24, 0.789);
+  border: solid 1px #ff2f41;
+  
 }
 
 #green {
   background-color: rgba(0, 128, 0, 0.501);
   border: solid 1px #0bee4b;
-  -webkit-backdrop-filter: blur(5px);
+  
 }
 
 #yellow {
   background-color: rgba(184, 150, 0, 0.513);
   border: solid 1px #ffe76f;
-  -webkit-backdrop-filter: blur(5px);
+ 
 }
 
 /*hover*/
